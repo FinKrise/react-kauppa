@@ -12,7 +12,7 @@ const App = () =>{
   function hasItem(data, item) {
     let i = -1;
     data.map((e, index) => {
-      if(e.data.productID === item.productID) {
+      if(e.data.id === item.id) {
         i = index;
       }
     });
@@ -22,7 +22,7 @@ const App = () =>{
 
   const buyHandler = (item, quantity, type) => {
     let temp = [...products];
-
+    console.log("Item " + item.title + " id " + item.id);
     if(type === 1) {
       const i = hasItem(temp, item);
       if(i >= 0) {

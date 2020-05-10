@@ -27,7 +27,7 @@ const images = [
         title: "Tuotekuva 3",
         description: "Kolmannen tuotteen tuotekuvaus",
         id: 2,
-        hinta: 4.20,
+        hinta: 4,
         amount: 0
     }
 ]
