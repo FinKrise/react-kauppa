@@ -79,7 +79,6 @@ if (page === "Cart") {
       <br></br>
       <button type="submit" onClick={e => setPage("Confirm")}>Lähetä</button>
       </form>
-      <p>That feeling when you need tech support, but you are tech support... #deep</p>
     </div>
   );
 }
@@ -93,8 +92,7 @@ else if (page === "Confirm") {
       <header className="App-header">
       <h1 id="kauppaheader">Paketi tulee piupiu</h1>
       </header>
-      <button onClick={e => setPage("")}>Menna osta uus mersu</button>
-      <p>That feeling when you need tech support, but you are tech support... #deep</p>
+      <button onClick={e => setPage("")}>Takaisin kauppaan</button>
     </div>
   );
 }
@@ -107,7 +105,6 @@ else {
       <CartList products={products} setProducts={setProducts} addProduct={buyHandler} setPage={setPage}/>
       </header>
       <ProductInfo productInfo={myData} buyhandler={buyHandler}/>
-      <p>That feeling when you need tech support, but you are tech support... #deep</p>
     </div>
   );
 }
